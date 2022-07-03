@@ -169,7 +169,7 @@ def create_LSTM_CNN_2P(input_shape,action_size):
         
     return model
 
-def Default_Model(input_shape,action_size):
+def create_MOS_CNN(input_shape,action_size):
     model = models.Sequential()
     model.add(
         layers.Conv2D(16, (3, 3), padding='valid', activation='relu', kernel_regularizer=regularizers.l2(0.001),
