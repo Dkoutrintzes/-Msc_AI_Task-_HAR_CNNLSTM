@@ -6,10 +6,10 @@ import os
 from scipy import interpolate
 import imageio
 import time
+import sys
 
-
-PathResActionsSeq= 'F:\Work\Action recognition NTU\Datasets\Skeletons_Data_Norm_zero'
-PathResActionsSeqImages= 'F:\Work\Action recognition NTU\Datasets\Mos_Ver_2P'
+PathResActionsSeq= sys.argv[1]
+PathResActionsSeqImages= sys.argv[2]
 
 def scaleback(data,skels):
     xaction,yaction,channels=np.shape(data)
